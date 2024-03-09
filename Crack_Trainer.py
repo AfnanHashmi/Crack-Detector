@@ -19,8 +19,8 @@ def ClassificationModel():
 
 allimages = []
 train = []
-nfiles = r"C:\Users\afnan\PycharmProjects\pythonProject\Crack\Negative\*"
-pfiles = r"C:\Users\afnan\PycharmProjects\pythonProject\Crack\Positive\*"
+nfiles = r"\Crack\Negative\*"
+pfiles = r"\Crack\Positive\*"
 
 for images in glob.glob(nfiles):
     img = cv2.imread(images)
