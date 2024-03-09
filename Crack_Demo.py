@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 model = tf.keras.models.load_model("CrackDetector.keras")
 
 allimages = []
-nfiles = r"C:\Users\afnan\PycharmProjects\pythonProject\Crack\Negative\*"
-pfiles = r"C:\Users\afnan\PycharmProjects\pythonProject\Crack\Positive\*"
+nfiles = r"\Crack\Negative\*"
+pfiles = r"\Crack\Positive\*"
 
 for images in glob.glob(nfiles):
     img = cv2.imread(images)
